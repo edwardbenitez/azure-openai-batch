@@ -47,5 +47,5 @@ To get the results
 
 ```bash
 # terminal running inside src folder
-uv run results.py --batch_id xxxxxxxxxxxxxxxxxxxxxxxxxx
+uv run results.py --batch_folder xxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
