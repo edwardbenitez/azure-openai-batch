@@ -19,7 +19,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
 
     # add arguments
-    parser.add_argument("--batch_id", dest='batch_id', help="Batch ID to process", type=str)
+    parser.add_argument("--batch_folder", dest='batch_folder', help="Batch ID to process", type=str)
 
     # parse args
     args = parser.parse_args()
@@ -74,7 +74,7 @@ def download_file(batch) -> str:
 
 def main():
     args=parse_args()
-    file_path = download_file(args.batch_id)
+    file_path = download_file(args.batch_folder)
     with open(file_path) as f:
         line = f.readline()
         read_results(line)
